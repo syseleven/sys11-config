@@ -1,27 +1,7 @@
 # 10-upstream.yaml - Upstream puppet modules used for instance deployment.
 
 repodeploy::repos:
-  '/opt/puppet-modules/apt':
-    revision: 43b894b12e53cb6943dfb936c5bdc700ee4997b2
-    source: git://github.com/puppetlabs/puppetlabs-apt.git
-    provider: git
-  '/opt/puppet-modules/concat':
-    revision: 3ed97157314fa472bcfdf93994d741e4e2a7be7e
-    source: git://github.com/puppetlabs/puppetlabs-concat.git
-    provider: git
-  '/opt/puppet-modules/inifile':
-    revision: 58883cdebde668877c557d48ccd5dbf1f9b773c4
-    source: git://github.com/puppetlabs/puppetlabs-inifile.git
-    provider: git
   '/opt/puppet-modules/puppet':
     revision: cd27a5abe8a2afc71f376b9afea72b70a7363f92
     source: git://github.com/stephenrjohnson/puppetlabs-puppet.git
-    provider: git
-  '/opt/puppet-modules/staging':
-    revision: 887275d8fb20e148c6f9eb327f1f6c8ea5ee280f
-    source: git://github.com/puphpet/puppet-staging.git
-    provider: git
-  '/opt/puppet-modules/stdlib':
-    revision: 0cd08b377b58927aefa15908689a69dfb99339d5
-    source: git://github.com/puppetlabs/puppetlabs-stdlib.git
     provider: git

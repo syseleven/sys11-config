@@ -1,20 +1,12 @@
 # Repositories to fetch puppet modules from.
 
 repodeploy::repos:
-  '/opt/puppet-modules/apt':
-    revision: 43b894b12e53cb6943dfb936c5bdc700ee4997b2
-    source: git://github.com/puppetlabs/puppetlabs-apt.git
-    provider: git
   '/opt/puppet-modules/kmod':
     revision: aa98ccdd35c8e871a6e22ecbab5a6b8b9f65dd8c
     source: git://github.com/camptocamp/puppet-kmod.git
     provider: git
   '/opt/puppet-modules/rabbitmq':
     source: git://github.com/puppetlabs/puppetlabs-rabbitmq.git
-    provider: git
-  '/opt/puppet-modules/stdlib':
-    revision: 0cd08b377b58927aefa15908689a69dfb99339d5
-    source: git://github.com/puppetlabs/puppetlabs-stdlib.git
     provider: git
   '/opt/puppet-modules/sysctl':
     revision: 26b1691c390d6c3c0d8910871df0ac1f5a5608e3
@@ -23,10 +15,6 @@ repodeploy::repos:
   '/opt/puppet-modules/timezone':
     revision: b3a848de34e03be6b8d9d9bdfcbecdcf2915b229
     source: git://github.com/saz/puppet-timezone.git
-    provider: git
-  '/opt/puppet-modules/vcsrepo':
-    revision: 9a955b8746f373a1a3e47ebf67d4186b98e0094f
-    source: git://github.com/puppetlabs/puppetlabs-vcsrepo.git
     provider: git
   '/opt/puppet-modules/base':
     source: git@gitlab.syseleven.de:openstack/puppet-base.git
