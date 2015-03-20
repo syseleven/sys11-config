@@ -1,17 +1,19 @@
 # Repositories to fetch puppet modules from.
 
 repodeploy::repos:
+  '/opt/puppet-modules/sys11sensu':
+    source:
+      origin: https://github.com/syseleven/puppet-sys11sensu.git
+      gitlab: git@gitlab.syseleven.de:openstack/puppet-sys11sensu.git
+    provider: git
   '/opt/puppet-modules/sensu':
     revision: 1e961b90aadb9cd2e54d77d7443160bb96c61af2
     source: git://github.com/sensu/sensu-puppet.git
     provider: git
-  '/opt/puppet-modules/base':
-    source: git@gitlab.syseleven.de:openstack/puppet-base.git
-    provider: git
-  '/opt/puppet-modules/sys11sensu':
-    source: git@gitlab.syseleven.de:openstack/puppet-sys11sensu.git
-    provider: git
   '/opt/puppet-modules/rabbitmq':
     revision: 9c40d7f28285f5601aea1e025634e7360ff8aa9a
     source: git://github.com/puppetlabs/puppetlabs-rabbitmq.git
+    provider: git
+  '/opt/puppet-modules/sys11lib':
+    source: https://github.com/syseleven/puppet-sys11lib.git
     provider: git

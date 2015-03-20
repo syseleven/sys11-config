@@ -1,9 +1,8 @@
 # 10-syseleven.yaml: Syseleven's own repositories
 
 repodeploy::repos:
-  '/opt/puppet-modules/base':
-    source: git@gitlab.syseleven.de:openstack/puppet-base.git
-    provider: git
   '/opt/puppet-modules/sys11puppet':
-    source: git@gitlab.syseleven.de:openstack/puppet-sys11puppet.git
+    source:
+      origin: https://github.com/syseleven/puppet-sys11puppet.git
+      gitlab: git@gitlab.syseleven.de:openstack/puppet-sys11puppet.git
     provider: git
