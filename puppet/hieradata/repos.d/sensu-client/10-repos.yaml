@@ -1,0 +1,22 @@
+# Repositories to fetch puppet modules from.
+
+repodeploy::repos:
+  '/opt/puppet-modules/vcsrepo':
+    revision: 9a955b8746f373a1a3e47ebf67d4186b98e0094f
+    source: git://github.com/puppetlabs/puppetlabs-vcsrepo.git
+    provider: git
+  '/opt/puppet-modules/stdlib':
+    revision: 0cd08b377b58927aefa15908689a69dfb99339d5
+    source: git://github.com/puppetlabs/puppetlabs-stdlib.git
+    provider: git
+  '/opt/puppet-modules/sensu':
+    revision: 1e961b90aadb9cd2e54d77d7443160bb96c61af2
+    source: git://github.com/sensu/sensu-puppet.git
+    provider: git
+  '/opt/puppet-modules/apt':
+    revision: 43b894b12e53cb6943dfb936c5bdc700ee4997b2
+    source: git://github.com/puppetlabs/puppetlabs-apt.git
+    provider: git
+  '/opt/puppet-modules/sys11sensu':
+    source: git@gitlab.syseleven.de:openstack/puppet-sys11sensu.git
+    provider: git

@@ -1,0 +1,4 @@
+---
+classes:
+  - ssh
+  - ssh::authorized_keys

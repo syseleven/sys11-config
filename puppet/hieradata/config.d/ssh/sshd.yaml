@@ -1,0 +1,13 @@
+---
+ssh::monit_check: 'absent'
+ssh::fail2ban_check: 'absent'
+ssh::server_rootallowed: true
+ssh::server_passwordallowed: false
+ssh::server_usepam: true
+ssh::server_host_keys:
+  - '/etc/ssh/ssh_host_rsa_key'
+  - '/etc/ssh/ssh_host_ecdsa_key'
+  - '/etc/ssh/ssh_host_dsa_key'
+ssh::listen_ip: '0.0.0.0'
+ssh::server_template_vars:
+  AcceptEnv: CLOUD_USER

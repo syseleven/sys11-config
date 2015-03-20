@@ -1,0 +1,5 @@
+repodeploy::repos:
+  '/opt/puppet-modules/rabbitmq':
+    source: git://github.com/jgrassler/puppetlabs-rabbitmq.git # os-455: adds compatiblity with rabbitmq 3.5
+    revision: patch-1
+    provider: git

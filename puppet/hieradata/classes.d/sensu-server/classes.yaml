@@ -1,0 +1,2 @@
+classes:
+  - sys11sensu::role::server

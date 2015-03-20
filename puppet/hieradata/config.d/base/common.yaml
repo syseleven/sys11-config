@@ -1,0 +1,2 @@
+# is going to be installed in puppet-base
+python::pip: false

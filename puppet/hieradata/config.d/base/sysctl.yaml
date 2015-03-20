@@ -1,0 +1,13 @@
+base::profile::sysctl::sysctls:
+  fs.aio-max-nr: '1048576'                # Allow more outstanding AIO requests
+  kernel.panic_on_oops: '1'               # Stop the system on crashes in the kernel, even if recoverable
+  net.core.default_qdisc: 'fq_codel'      # Optimized for 10G datacenter networks (optimizes for low latency).
+  net.core.rmem_default: '262144'         # Larger default socket receive buffers
+  net.core.rmem_max: '4194304'            # Even larger socket receive buffers on application request
+  net.core.wmem_default: '262144'         # Larger default socket send buffers
+  net.core.wmem_max: '1048576'            # Even larger socket send buffers on application request
+  net.ipv4.tcp_ecn: '1'                   # Enable TCP ECN (congestion notifications from routers).
+  net.ipv4.tcp_fin_timeout: '2'           # Don't wait very long for the other side to confirm closing the connection
+  vm.dirty_background_bytes: '134217728'  # Write dirty pages to disk if there are this many dirty bytes in memory.
+  vm.dirty_bytes: '2147483648'            # Don't accept dirty pages once there are this many dirty bytes.
+  vm.min_free_kbytes: '1048576'           # Retain enough memory to unload/load vrouter module.

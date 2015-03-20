@@ -1,0 +1,43 @@
+# 10-upstream.yaml - Upstream puppet modules used for instance deployment.
+
+repodeploy::repos:
+  '/opt/puppet-modules/apache':
+    revision: dd06847da5200cf2e095ec3a823b0d0c45b5b1ce
+    source: git://github.com/puppetlabs/puppetlabs-apache.git
+    provider: git
+  '/opt/puppet-modules/apt':
+    revision: 43b894b12e53cb6943dfb936c5bdc700ee4997b2
+    source: git://github.com/puppetlabs/puppetlabs-apt.git
+    provider: git
+  '/opt/puppet-modules/concat':
+    revision: 3ed97157314fa472bcfdf93994d741e4e2a7be7e
+    source: git://github.com/puppetlabs/puppetlabs-concat.git
+    provider: git
+  '/opt/puppet-modules/firewall':
+    revision: 955024ee846a251686f70505c4502ac406cfe4d4
+    source: git://github.com/puppetlabs/puppetlabs-firewall.git
+    provider: git
+  '/opt/puppet-modules/inifile':
+    revision: 58883cdebde668877c557d48ccd5dbf1f9b773c4
+    source: git://github.com/puppetlabs/puppetlabs-inifile.git
+    provider: git
+  '/opt/puppet-modules/puppet':
+    revision: cd27a5abe8a2afc71f376b9afea72b70a7363f92
+    source: git://github.com/stephenrjohnson/puppetlabs-puppet.git
+    provider: git
+  '/opt/puppet-modules/puppetdb':
+    revision: cb5d1778ae03ec2b89e8bc2c42b6ee5fed1013f0
+    source: http://github.com/puppetlabs/puppetlabs-puppetdb
+    provider: git
+  '/opt/puppet-modules/postgresql':
+    revision: b0f2a8f765f4bf05950e15700dfaff93f569936c
+    source: git://github.com/puppetlabs/puppet-postgresql.git
+    provider: git
+  '/opt/puppet-modules/staging':
+    revision: 887275d8fb20e148c6f9eb327f1f6c8ea5ee280f
+    source: git://github.com/puphpet/puppet-staging.git
+    provider: git
+  '/opt/puppet-modules/stdlib':
+    revision: 0cd08b377b58927aefa15908689a69dfb99339d5
+    source: git://github.com/puppetlabs/puppetlabs-stdlib.git
+    provider: git

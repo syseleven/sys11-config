@@ -1,0 +1,11 @@
+vefirewall::accept_input_on_internal_network: false
+
+# Firewall rules are a whitelist. All IP traffic from unlisted hosts/subnets is
+# dropped (unless it is traffic to/from services mentioned in
+# vefirewall::host_trusted_services). If you plan on writing your own firewall
+# rule set, be sure it allows at least the Openstack metadata network and the
+# hosts/subnets that should be able to access the machine in question.
+
+vefirewall::allow_input_from_networks:
+  - 0.0.0.0/0
+  - 169.254.0.0/8    # Openstack metadata network

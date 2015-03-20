@@ -1,0 +1,16 @@
+# Repositories required by classes that are added to the classes array by the
+# default configuration.
+
+repodeploy::repos:
+  '/opt/syseleven-base':
+    source: git@gitlab.syseleven.de:puppet-manifests/syseleven-base.git
+    provider: git
+    include:
+      - modules/ssh
+      - modules/vefirewall
+      - modules/exim
+      - modules/sys11lib
+  '/opt/puppet-modules/firewall':
+    revision: 955024ee846a251686f70505c4502ac406cfe4d4
+    source: git://github.com/puppetlabs/puppetlabs-firewall.git
+    provider: git

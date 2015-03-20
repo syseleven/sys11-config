@@ -1,0 +1,12 @@
+# Caution: Enabling this topic requires a project configuration that specifies
+# exim::postmaster at the very least.
+
+# exim
+exim::role: admin
+# Set this in your project config:
+#exim::postmaster: changeme@no.such.domain.invalid
+exim::enable_nagioscheck: false
+
+# mysql
+mysql::bindings:python_enable: true
+mysql::bindings:ruby_enable: true
