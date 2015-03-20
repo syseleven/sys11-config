@@ -1,4 +1,6 @@
-# 10-upstream.yaml - Upstream puppet modules used for instance deployment.
+## Global hiera configuration. Use carefully.
+
+# Repositories that are required for almost any topic
 
 repodeploy::repos:
   '/opt/puppet-modules/apt':
@@ -24,4 +26,8 @@ repodeploy::repos:
   '/opt/puppet-modules/stdlib':
     revision: 0cd08b377b58927aefa15908689a69dfb99339d5
     source: git://github.com/puppetlabs/puppetlabs-stdlib.git
+    provider: git
+  '/opt/puppet-modules/vcsrepo':
+    revision: 9a955b8746f373a1a3e47ebf67d4186b98e0094f
+    source: git://github.com/puppetlabs/puppetlabs-vcsrepo.git
     provider: git
