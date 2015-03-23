@@ -17,5 +17,7 @@ repodeploy::repos:
     source: git://github.com/saz/puppet-timezone.git
     provider: git
   '/opt/puppet-modules/base':
-    source: git@gitlab.syseleven.de:openstack/puppet-base.git
+    source: 
+      origin: https://github.com/syseleven/puppet-base.git
+      gitlab: git@gitlab.syseleven.de:openstack/puppet-base.git
     provider: git

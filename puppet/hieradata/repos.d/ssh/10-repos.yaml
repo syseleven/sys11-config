@@ -2,11 +2,6 @@
 # default configuration.
 
 repodeploy::repos:
-  '/opt/syseleven-base':
-    source: git@gitlab.syseleven.de:puppet-manifests/syseleven-base.git
+  '/opt/puppet-modules/ssh':
+    source: https://github.com/syseleven/puppet-ssh.git
     provider: git
-    include:
-      - modules/ssh
-      - modules/vefirewall
-      - modules/exim
-      - modules/sys11lib
