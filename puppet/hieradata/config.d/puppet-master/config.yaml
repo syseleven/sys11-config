@@ -5,6 +5,10 @@ sys11puppet::master::clientclean: false
 
 # enable directory environments
 sys11puppet::master::environments: 'directory'
+sys11puppet::master::masterenv:
+  'production':
+    modulepath: '/opt/puppet-modules/'
+    manifest: '/etc/puppet/manifests/'
 
 # dashboard broken with ubuntu-14
 #  puppet-dashboard : Depends: ruby1.8 (>= 1.8.7) which is a virtual package.
