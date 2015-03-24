@@ -31,3 +31,10 @@ repodeploy::repos:
     revision: 9a955b8746f373a1a3e47ebf67d4186b98e0094f
     source: git://github.com/puppetlabs/puppetlabs-vcsrepo.git
     provider: git
+
+
+# do apt-get update on a daily basis on puppet runs instead of just once
+# explicetly triggered
+apt::apt_update_frequency: 'daily'
+# apt-get update may fail sometimes because of timeouts
+apt::update_tries: 3
