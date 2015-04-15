@@ -1,30 +1,34 @@
 # Repositories to fetch puppet modules from.
 
 repodeploy::repos:
-  '/opt/puppet-modules/timezone':
-    revision: b3a848de34e03be6b8d9d9bdfcbecdcf2915b229
-    source: git://github.com/saz/puppet-timezone.git
-    provider: git
-  '/opt/puppet-modules/sys11graphite':
-    source: git@gitlab.syseleven.de:openstack/puppet-sys11graphite.git
-    provider: git
-  '/opt/puppet-modules/mysql':
-    revision: b338635919f8a4b4727305d7bb3adc3b0725a941
-    source: git://github.com/puppetlabs/puppetlabs-mysql.git
+  '/opt/puppet-modules/apache':
+    source: https://github.com/puppetlabs/puppetlabs-apache.git
+    revision: 1.2.0
     provider: git
   '/opt/puppet-modules/graphite':
     revision: v6.0.0
     source: git://github.com/echocat/puppet-graphite.git
     provider: git
-  '/opt/puppet-modules/python':
-    source: https://github.com/stankevich/puppet-python.git
-    revision: 7bcf985e9b004ace86cf517356f0bb463a353e53
-    provider: git
   '/opt/puppet-modules/logrotate':
     source: https://github.com/rodjek/puppet-logrotate.git
     revision: 89ee645e2350045be48df7ac3ef86cbe4cd9b096
     provider: git
-  '/opt/puppet-modules/apache':
-    source: https://github.com/puppetlabs/puppetlabs-apache.git
-    revision: 1.2.0
+  '/opt/puppet-upstream/memcached':
+    revision: b1c0011d971890fc0eeb66b136a553c9009e6123
+    source: git://github.com/saz/puppet-memcached.git
+    provider: git
+  '/opt/puppet-modules/mysql':
+    revision: b338635919f8a4b4727305d7bb3adc3b0725a941
+    source: git://github.com/puppetlabs/puppetlabs-mysql.git
+    provider: git
+  '/opt/puppet-modules/python':
+    source: https://github.com/stankevich/puppet-python.git
+    revision: 7bcf985e9b004ace86cf517356f0bb463a353e53
+    provider: git
+  '/opt/puppet-modules/sys11graphite':
+    source: git@gitlab.syseleven.de:openstack/puppet-sys11graphite.git
+    provider: git
+  '/opt/puppet-modules/timezone':
+    revision: b3a848de34e03be6b8d9d9bdfcbecdcf2915b229
+    source: git://github.com/saz/puppet-timezone.git
     provider: git
