@@ -19,6 +19,9 @@ repodeploy::repos:
     revision: cd27a5abe8a2afc71f376b9afea72b70a7363f92
     source: git://github.com/stephenrjohnson/puppetlabs-puppet.git
     provider: git
+  '/opt/puppet-modules/openstackfacts':
+    source: https://github.com/syseleven/puppet-openstackfacts.git
+    provider: git
   '/opt/puppet-modules/staging':
     revision: 887275d8fb20e148c6f9eb327f1f6c8ea5ee280f
     source: git://github.com/puphpet/puppet-staging.git
