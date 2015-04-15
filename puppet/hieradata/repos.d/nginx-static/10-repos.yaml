@@ -1,0 +1,5 @@
+repodeploy::repos:
+  '/opt/puppet-modules/nginx':
+    source: https://github.com/jfryman/puppet-nginx.git
+    revision: b65080c62573c4ccbacaf7f84fb4b2d4cdf03c16
+    provider: git

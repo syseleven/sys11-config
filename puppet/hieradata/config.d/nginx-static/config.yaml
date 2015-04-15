@@ -1,0 +1,3 @@
+nginx::nginx_vhosts:
+  "%{::openstack_floating_ip}":
+     www_root: "/var/www/%{::openstack_floating_ip}"
