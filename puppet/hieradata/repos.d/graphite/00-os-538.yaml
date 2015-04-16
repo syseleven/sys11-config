@@ -1,6 +1,0 @@
-# os-538: temporary (until https://github.com/echocat/puppet-graphite/pull/172 is merged)
-repodeploy::repos:
-  '/opt/puppet-modules/graphite':
-    revision: fix-163
-    source: git://github.com/jgrassler/puppet-graphite.git
-    provider: git
