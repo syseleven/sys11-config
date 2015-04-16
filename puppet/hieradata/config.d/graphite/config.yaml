@@ -1,0 +1,16 @@
+sys11graphite::profile::server::mysql_root_password: 'mysql_root_password_changeme'
+sys11graphite::profile::server::mysql_db_password: 'mysql_db_password_changeme'
+sys11graphite::profile::server::graphite_secret_key: 'mysql_secret_key_changeme'
+
+# This setting should only be enabled if the machine this is being deployed to
+# has a volume meeting one of the following conditions attached as /dev/vdb:
+#
+#   1) The volume has previously been set up as a storage volume using this topic.
+#   2) The volume contains neither data, nor a file system.
+#
+# sys11graphite::profile::server::setup_volume: false
+
+sys11graphite::profile::server::superusers:
+  'root':
+    email: 'tf-platform@syseleven.de'
+    password: 'graphite_superuser_password_changeme'
