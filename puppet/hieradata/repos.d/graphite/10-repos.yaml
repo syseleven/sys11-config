@@ -13,7 +13,7 @@ repodeploy::repos:
     source: https://github.com/rodjek/puppet-logrotate.git
     revision: 89ee645e2350045be48df7ac3ef86cbe4cd9b096
     provider: git
-  '/opt/puppet-upstream/memcached':
+  '/opt/puppet-modules/memcached':
     revision: b1c0011d971890fc0eeb66b136a553c9009e6123
     source: git://github.com/saz/puppet-memcached.git
     provider: git
