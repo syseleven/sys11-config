@@ -11,3 +11,5 @@ ssh::server_host_keys:
 ssh::listen_ip: '0.0.0.0'
 ssh::server_template_vars:
   AcceptEnv: CLOUD_USER
+
+ssh::authorized_keys::purge: true
