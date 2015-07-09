@@ -10,6 +10,6 @@ ssh::server_host_keys:
   - '/etc/ssh/ssh_host_dsa_key'
 ssh::listen_ip: '0.0.0.0'
 ssh::server_template_vars:
-  AcceptEnv: CLOUD_USER
+  AcceptEnv: CLOUD_USER GIT_AUTHOR_NAME GIT_COMMITTER_NAME GIT_COMMITTER_EMAIL GIT_AUTHOR_EMAIL
 
 ssh::authorized_keys::purge: true
