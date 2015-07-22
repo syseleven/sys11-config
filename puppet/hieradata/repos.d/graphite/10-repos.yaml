@@ -26,7 +26,7 @@ repodeploy::repos:
     revision: 7bcf985e9b004ace86cf517356f0bb463a353e53
     provider: git
   '/opt/puppet-modules/sys11graphite':
-    source: git@gitlab.syseleven.de:openstack/puppet-sys11graphite.git
+    source: https://github.com/syseleven/puppet-sys11graphite.git
     provider: git
   '/opt/puppet-modules/timezone':
     revision: b3a848de34e03be6b8d9d9bdfcbecdcf2915b229
