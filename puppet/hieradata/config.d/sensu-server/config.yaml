@@ -2,7 +2,7 @@ sys11sensu::rabbitmq_host: localhost
 sys11sensu::rabbitmq_user: sensu
 sys11sensu::rabbitmq_password: sensu_rabbitmq_password
 sys11sensu::rabbitmq_vhost: sensu
-sys11sensu::uchiwa_version: 0.7.1-1
+sys11sensu::uchiwa_version: 0.10.1-1
 
 # Handlers disabled, since they all need to be configured on a per-project basis
 # sys11sensu::profile::server::handlers::default_handlers:
