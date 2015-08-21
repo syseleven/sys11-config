@@ -1,0 +1,8 @@
+# Repositories to fetch puppet modules from.
+
+repodeploy::repos:
+  '/opt/puppet-modules/sys11consul':
+    source: git@gitlab.syseleven.de:openstack/puppet-sys11consul.git
+  '/opt/puppet-modules/consul':
+    source: https://github.com/solarkennedy/puppet-consul.git
+
