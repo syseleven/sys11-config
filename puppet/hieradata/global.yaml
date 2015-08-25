@@ -27,7 +27,7 @@ repodeploy::repos:
     source: git://github.com/puphpet/puppet-staging.git
     provider: git
   '/opt/puppet-modules/stdlib':
-    revision: 0cd08b377b58927aefa15908689a69dfb99339d5
+    revision: 1bed010dbbd4590b3299c81b0e962e76b8ffa845
     source: git://github.com/puppetlabs/puppetlabs-stdlib.git
     provider: git
   '/opt/puppet-modules/vcsrepo':
