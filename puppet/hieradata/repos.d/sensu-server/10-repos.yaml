@@ -1,10 +1,6 @@
 # Repositories to fetch puppet modules from.
 
 repodeploy::repos:
-  '/opt/syseleven-base':
-    source: git@gitlab.syseleven.de:puppet-manifests/syseleven-base.git
-    include:
-      - modules/ve_base
   '/opt/puppet-modules/sys11sensu':
     source: https://github.com/syseleven/puppet-sys11sensu.git
   '/opt/puppet-modules/sensu':
