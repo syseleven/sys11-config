@@ -5,6 +5,4 @@ repodeploy::repos:
     source: git@gitlab.syseleven.de:openstack/puppet-sys11consul.git
   '/opt/puppet-modules/consul':
     source: https://github.com/solarkennedy/puppet-consul.git
-  '/opt/puppet-modules/sys11monitoring':
-    source: git@gitlab.syseleven.de:openstack/puppet-sys11monitoring.git
 
