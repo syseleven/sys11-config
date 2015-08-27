@@ -5,6 +5,7 @@ repodeploy::repos:
     source: https://github.com/syseleven/puppet-sys11sensu.git
   '/opt/puppet-modules/sensu':
     revision: 1e961b90aadb9cd2e54d77d7443160bb96c61af2
+    source: git://github.com/sensu/sensu-puppet.git
   '/opt/puppet-modules/sys11lib':
     source: https://github.com/syseleven/puppet-sys11lib.git
   '/opt/puppet-modules/sys11monitoring':
