@@ -3,8 +3,12 @@
 repodeploy::repos:
   '/opt/puppet-modules/sys11sensu':
     source: https://github.com/syseleven/puppet-sys11sensu.git
-    provider: git
   '/opt/puppet-modules/sensu':
     revision: 1e961b90aadb9cd2e54d77d7443160bb96c61af2
     source: git://github.com/sensu/sensu-puppet.git
-    provider: git
+  '/opt/puppet-modules/sys11lib':
+    source: https://github.com/syseleven/puppet-sys11lib.git
+  '/opt/puppet-modules/sys11monitoring':
+    source: git@gitlab.syseleven.de:openstack/puppet-sys11monitoring.git
+
+
