@@ -3,7 +3,7 @@
 repodeploy::repos:
   '/opt/puppet-modules/apache':
     source: https://github.com/puppetlabs/puppetlabs-apache.git
-    revision: 1.2.0
+    revision: 4a2b0dbaa59f5db406502bd7e902dced316ee593
     provider: git
   '/opt/puppet-modules/graphite':
     revision: v6.0.0
