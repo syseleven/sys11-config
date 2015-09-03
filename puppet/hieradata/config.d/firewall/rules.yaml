@@ -7,5 +7,7 @@ vefirewall::accept_input_on_internal_network: false
 # hosts/subnets that should be able to access the machine in question.
 
 vefirewall::allow_input_from_networks:
-  - 0.0.0.0/0
+  - 10.0.0.0/8
   - 169.254.0.0/8    # Openstack metadata network
+vefirewall::host_trusted_services:
+  - 0.0.0.0/0,tcp,22 
