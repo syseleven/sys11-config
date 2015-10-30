@@ -43,3 +43,6 @@ sys11trending::type: 'grafana'
 apt::apt_update_frequency: 'daily'
 # apt-get update may fail sometimes because of timeouts
 apt::update_tries: 3
+
+# Configure local time on instances
+timezone::timezone: 'Europe/Berlin'
